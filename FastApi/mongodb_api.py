@@ -37,3 +37,12 @@ async def get_radhika_data():
         items.append(radhika_helper(document))
     return items
 
+
+
+@app.get("/radhika/showdata")
+async def get_radhika_data():
+    items = []
+    cursor = radhika_data.find({})
+    async for document in cursor:
+        items.append(radhika_helper(document))
+    return items
