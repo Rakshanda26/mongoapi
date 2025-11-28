@@ -5,8 +5,7 @@ from psycopg2.extras import RealDictCursor
 
 app = FastAPI()
 
-db_url = "postgresql://neondb_owner:npg_j0mYn2MoGAhN@ep-polished-cell-ahnmecib-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
-
+db_url =""
 class students(BaseModel):
     id : int 
     name : str
