@@ -8,7 +8,7 @@ def test():
 
 @app.get("/hari")
 def mantra():
-    return "hare krishna hare krishna krishna krishna hare hare"
+    return "Hello"
 
 @app.get("/math")
 def math():
